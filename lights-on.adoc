@@ -1,10 +1,6 @@
 ==  Lights On
 
-If we look at the LameStation's board layout, we'll find that there's a single LED we can toggle.
-
-// add image of software LED vs power LED
-
-This was designed into the board as an easy way for the LameStation to do _something_. As you might have gathered putting it together, getting a board to do _something_ can be half the battle.
+If we look at the LameStation's board layout, we'll find that there's a single LED we can toggle. This was designed into the board as an easy way for the LameStation to do _ something _ . As you might have gathered putting it together, getting a board to do _ something _ can be half the battle.
 
 All we have to do to turn on this light is toggle the microcontroller pin it is connected to. On this board, it's connected to pin 24. To turn on a pin, two steps are required:
 
@@ -37,7 +33,3 @@ PUB Main
 ----
 
 Now both LEDs on the LameStation should be active.
-
-- Why is it that there is a single LED we can toggle, but at the end of this section, both LEDs are active? What's the other LED?
-
-The other LED is a power LED. It's always on to indicate that the LameStation is turned on.

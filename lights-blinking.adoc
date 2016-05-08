@@ -47,9 +47,6 @@ REPEAT is your go-to command for looping in Spin.
   `while` loop. 
 - Can contain statements in a ` "conditional" ` . 
 
-[TIP]
-====
-
 Spin is indent-sensitive. The code:
 
 [source, language='pub']
@@ -73,4 +70,3 @@ repeat 10000
 ----
 
 Remember that!
-====

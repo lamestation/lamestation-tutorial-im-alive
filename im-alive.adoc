@@ -6,7 +6,7 @@ Luckily, there's a way around this problem.
 
 ===  Introducing `CON` blocks
 
-`PUB` isn't the only kind of block available. `CON` blocks allow you to set _constant_ values that don't change, allowing you to call them by name. 
+`PUB` isn't the only kind of block available. `CON` blocks allow you to set _constant_ values, that don't change, allowing you to call them by name. 
 
 Setting a constant is easy. Constant names can contain letters, numbers, and underscores (`_`), but must start with a letter or underscore.
 
@@ -60,9 +60,7 @@ Why? It makes it easier to remember that it's a constant value.
 
 Sometimes it's helpful to put code into a separate file. That way, if you have a nice piece of code that does something useful, you don't have to keep rewriting it for every project you work on. Instead, you can use it from where it is. Spin allows us to do this using the `OBJ` block. `OBJ` is short for _object_, because code files are called "objects" in Spin lingo.
 
-To include an object in your code, you will need to provide the name of the file in quotes, and a short name that will represent the object in this file. In our case, we'd like to add the file `LamePinout.spin` which contains pin assignments for the LameStation board. You can include the `.spin` extension or not, but the include file _must_ be a Spin file.
-
-Here's an example: we'll use `pin` as a short name for the object LamePinout.
+To include an object in your code, you will need to provide the name of the file in quotes, and a short name under which you'd like to use the object. In our case, we'd like to add the file `LamePinout.spin` which contains pin assignments for the LameStation board. You can include the `.spin` extension or not, but the include file _must_ be a Spin file.
 
 [source]
 ----
@@ -72,7 +70,7 @@ OBJ
 
 Now that you have the object included, you will be able to use the functions and constants inside of it.
 
-To call a function in another object, write the short name of the included object, then a period (`.`), then the name of the function you want to call.
+To call a function in another object, prefix the short name of the included object, separating it with a period (`.`).
 
 [source]
 ----
@@ -80,7 +78,7 @@ PUB Main
     pin.Null
 ----
 
-To get the value of a constant in another object, write the short name, then a hash symbol (`#`), then the name of the constant you want to use. Here we grab the pin number for the LED from `LamePinout.spin`.
+To get the value of a constant in another object, add the short name and the hash symbol (`#`). Here's us grabbing the pin assignment for the LED from `LamePinout.spin`.
     
 [source]
 ----
