@@ -43,7 +43,7 @@ So let's start small. Here's how to test if the `A` button is pressed. We use th
             outa[LED_PIN]~
 ----
 
-The light turns off when pressed, if it has, or stays on when not.
+The light turns off when pressed, and turns on when released.
 
 You can see all the functions in LameControl by clicking it in the project view on the left-hand side, or looking at the link:../library/LameControl.adoc[SDK reference].
 
