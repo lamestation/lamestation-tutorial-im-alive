@@ -2,7 +2,11 @@
 
 Now that we've learned how to include objects, let's take a look inside the LameStation SDK. In this example, we control the LED using the buttons and joystick.
 
-Introducing LameControl! LameControl is another small object for getting user input. Setting it up is straight forward; just include it like you did with LamePinout.
+=== Instructions
+
+==== Introducing LameControl!
+
+LameControl is another small object for getting user input. Setting it up is straight forward; just include it like you did with LamePinout.
 
 [source]
 ----
@@ -20,7 +24,7 @@ does nothing, so make sure you do. At the beginning of your loop is a good place
         ctrl.Update
 ----
 
-=== Conditionally Yours
+==== Conditionally Yours
 
 Before you can see anything interesting, you need a way to test if a button has been pressed.
 
@@ -47,10 +51,12 @@ The light turns off when pressed, and turns on when not.
 
 You can see all the functions in LameControl by clicking it in the project view on the left-hand side, or by looking at the SDK reference.
 
+==== The Condition Is Complicated
+
 Spin allows us to make more complex conditions using the `and`, `or` and `not` keywords. Some examples:
 
 - `if ctrl.A and ctrl.B` - True only if both buttons are pressed.
-- `if ctrl.A and not ctrl.B` - True if `A` is pressed but `B` is not pressed.
+- `if ctrl.A and not ctrl.B` - True if `A` is pressed and `B` is not pressed.
 - `if ctrl.A or ctrl.B` - True if either `A` or `B` are pressed, or both.
 
 So let's take all the LameControl commands and combine them into one, so that the light is off if any controls are touched at all.
@@ -62,6 +68,8 @@ So let's take all the LameControl commands and combine them into one, so that th
         else
             outa[LED_PIN]~
 ----
+
+=== The Code
 
 Let's take the completed example for a _spin!_
 
