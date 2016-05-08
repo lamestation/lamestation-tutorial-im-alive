@@ -2,7 +2,7 @@
 
 Now that we've learned how to include objects, let's take a look inside the LameStation SDK. In this example, we control the LED using the buttons and joystick.
 
-Introducing LameControl! LameControl is a small library for getting user input. Setting it up is straight forward; just include it.
+Introducing LameControl! LameControl is a small object for getting user input. Setting it up is straight forward; just include it.
 
 [source]
 ----
