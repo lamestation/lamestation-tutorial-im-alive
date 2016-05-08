@@ -62,7 +62,7 @@ Sometimes it's helpful to put code into a separate file. That way, if you have a
 
 To include an object in your code, you will need to provide the name of the file in quotes, and a short name that will represent the object in this file. In our case, we'd like to add the file `LamePinout.spin` which contains pin assignments for the LameStation board. You can include the `.spin` extension or not, but the include file _must_ be a Spin file.
 
-Here's an example: we'll use `pin` as a short name for the object `LamePinout`.
+Here's an example: we'll use `pin` as a short name for the object LamePinout.
 
 [source]
 ----
