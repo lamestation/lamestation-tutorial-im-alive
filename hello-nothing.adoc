@@ -10,7 +10,7 @@ Attempting to download an empty file to the LameStation will generate an error f
 ////
 
 [source, language='pub']
-.An empty file.
+.An empty file
 ----
 
 ----
@@ -20,7 +20,7 @@ so here we see the bare minimum that constitutes a Spin program.
 [source, language='pub']
 .HelloNothing.spin
 ----
-PUB Main
+PUB First
 
 ----
 
@@ -30,7 +30,7 @@ This is called a `PUB` block, which is short for _public function_ . Functions a
 
 [source, language='pub']
 ----
-PUB Main
+PUB First
     Third
 
 PUB Another
@@ -39,24 +39,26 @@ PUB Third
     Another
 ----
 
-All Spin programs _must_ include a `PUB` block.
+All Spin programs _must_ include at least one `PUB` block.
 
+[NOTE]
+====
 Spin is *not* case-sensitive.
     
 [source, language='pub']
 ----
-PUB Main
+PUB First
 ----
 
 is the same as
     
 [source, language='pub']
 ----
-pub main
+pub first
 ----
 
 Remember that!
-
+====
 
 View the complete example at `/tutorials/Basics/HelloNothing.spin`.
 
