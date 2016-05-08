@@ -6,7 +6,7 @@ Luckily, there's a way around this problem.
 
 ===  Introducing `CON` blocks
 
-`PUB` isn't the only kind of block available. `CON` blocks allow you to set _constant_ values, that don't change, allowing you to call them by name. 
+`PUB` isn't the only kind of block available. `CON` blocks allow you to set _constant_ values that don't change, allowing you to call them by name. 
 
 Setting a constant is easy. Constant names can contain letters, numbers, and underscores (`_`), but must start with a letter or underscore.
 
