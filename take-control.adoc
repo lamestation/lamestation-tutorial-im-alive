@@ -22,7 +22,7 @@ does nothing, so make sure you do. At the beginning of your loop is a good place
 
 === Conditionally Yours
 
-Before you'll be able to see anything interesting, you need a way to test if a button has been pressed.
+Before you can see anything interesting, you need a way to test if a button has been pressed.
 
 Well, the `IF` keyword does just that. It allows you to run code if a condition is true. Then, you can use the `ELSE` to run code if it is false.
 
