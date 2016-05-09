@@ -25,4 +25,3 @@ Once you've written a program, it is transformed into a form that a computer can
 In PropellerIDE, simply press kbd:[F10] and in a few moments, the LameStation will run your code.
 
 The examples in this section can be found in the `demos/basics/` folder of the LameStation SDK.
-
